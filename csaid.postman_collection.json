@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "21d5d762-0a19-4ca9-bfe2-2cfa3ef53f48",
+		"name": "csaid",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "csaidcall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://maps.raleighnc.gov/arcgis/rest/services/Energov/DataMap_Energov/MapServer/1/query?where=ADDRESS%3D%27{{ADDRESS}}%27&outfields=CSAID&f=json",
+					"protocol": "https",
+					"host": [
+						"maps",
+						"raleighnc",
+						"gov"
+					],
+					"path": [
+						"arcgis",
+						"rest",
+						"services",
+						"Energov",
+						"DataMap_Energov",
+						"MapServer",
+						"1",
+						"query"
+					],
+					"query": [
+						{
+							"key": "where",
+							"value": "ADDRESS%3D%27{{ADDRESS}}%27"
+						},
+						{
+							"key": "outfields",
+							"value": "CSAID"
+						},
+						{
+							"key": "f",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
